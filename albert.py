@@ -1,11 +1,5 @@
-import contextlib
 import selenium.webdriver as webdriver
-import selenium.webdriver.support.ui as ui
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
-from selenium.common.exceptions import TimeoutException
 import os
 
 driver = webdriver.Firefox()
@@ -45,7 +39,7 @@ details.click()
 
 time.sleep(5)
 # Get all details div and print the status
-ml = driver.find_element_by_id("win0divNYU_CLS_DERIVED_HTMLAREA3$133")
+ml = driver.find_element_by_id("win0divNYU_CLS_SBDTLVW_CRSE_ID$31")
 spans = ml.find_elements_by_tag_name("span")
-print(spans[4].text)
+print(spans[8].text)
 
